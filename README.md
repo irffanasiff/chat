@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="/assets/logoDark.png" />
+  <img src="/assets/logoDark.png" width="140px" height="140px" />
 
   <h1>Chat xNFT</h1>
 
