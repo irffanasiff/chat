@@ -6,15 +6,25 @@
   "scripts": {
     "build": "xnft build",
     "start": "xnft watch",
-    "dev": "xnft dev"
+    "dev": "xnft dev",
+    "lint": "eslint ./src",
+    "prettier": "prettier --write .",
+    "prepare": "husky install"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@coral-xyz/xnft-cli": "latest"
+    "@commitlint/cli": "^17.2.0",
+    "@commitlint/config-conventional": "^17.2.0",
+    "@coral-xyz/xnft-cli": "latest",
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
+    "@typescript-eslint/parser": "^5.42.1",
+    "eslint-plugin-react": "^7.31.10",
+    "prettier": "^2.7.1"
   },
   "dependencies": {
-    "react-xnft": "latest",
-    "react": "^17.0.2"
+    "eslint": "^8.27.0",
+    "react": "^17.0.2",
+    "react-xnft": "latest"
   }
 }

@@ -1,17 +1,16 @@
-import React from 'react';
-import ReactXnft, { Text, View } from "react-xnft";
+import React, { useState } from 'react';
+import ReactXnft, { Text, View, useMetadata } from 'react-xnft';
 
-//
-// On connection to the host environment, warm the cache.
-//
-ReactXnft.events.on("connect", () => {
+ReactXnft.events.on('connect', () => {
   // no-op
 });
 
 export function App() {
+  const [name, setName] = useState();
+  const metaData = useMetadata();
   return (
-    <View>
-      <Text>Hello, World!</Text>
+    <View tw="p-2 flex">
+      <Text>gm @{metaData.username} 👋🏻</Text>
     </View>
   );
 }
